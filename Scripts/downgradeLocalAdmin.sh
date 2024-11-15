@@ -32,7 +32,7 @@ abmcheck=true   # Only downgrade users if this device is ABM managed
 downgrade=true  # If set to false, script will not do anything
 logandmetadir="/Library/Logs/Microsoft/IntuneScripts/downgradeAdminUsers"
 log="$logandmetadir/downgradeAdminUsers.log"
-adminaccountname="Local Admin"
+adminaccountname="LAPS Admin"
 function startLog() {
 
     ###################################################
