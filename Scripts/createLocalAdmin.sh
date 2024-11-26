@@ -25,7 +25,7 @@
 # Define variables
 
 adminaccountname="lapsadmin"       # This is the accountname of the new admin
-adminaccountfullname="Admin"  # This is the full name of the new admin user
+adminaccountfullname="LAPS Admin"  # This is the full name of the new admin user
 scriptname="Create Local Admin Account"
 logandmetadir="/Library/Logs/createLocalAdminAccount"
 log="$logandmetadir/createLocalAdminAccount.log"
