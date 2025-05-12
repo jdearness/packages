@@ -63,9 +63,9 @@ echo "############################################################"
 echo ""
 
 echo "Creating new local admin account [$adminaccountname]"
-p=`head -c 24 /dev/urandom | base64 | tr -dc 'a-zA-Z0-9'`
+#p=`head -c 24 /dev/urandom | base64 | tr -dc 'a-zA-Z0-9'`
 waitforSetupAssistant
 echo "Adding $adminaccountname to hidden users list"
 sudo defaults write /Library/Preferences/com.apple.loginwindow HiddenUsersList -array-add "$adminaccountname"
 sudo sysadminctl -deleteUser "$adminaccountname" # Remove existing admin account if it exists
-sudo sysadminctl -adminUser "$adminaccountname" -adminPassword "$p" -addUser "$adminaccountname" -fullName "$adminaccountfullname" -password "$p" -admin
+sudo sysadminctl -adminUser "$adminaccountname" -adminPassword "OUTRAGE-crowd-fellow^6" -addUser "$adminaccountname" -fullName "$adminaccountfullname" -password "OUTRAGE-crowd-fellow^6" -admin
